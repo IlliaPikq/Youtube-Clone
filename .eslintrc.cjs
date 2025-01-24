@@ -15,7 +15,8 @@ module.exports = {
       "error",
       {
         "varsIgnorePattern": "React"
-      }
-    ]
+      },
+    ],
+    "react/prop-types": false,
   },
 }
