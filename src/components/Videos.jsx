@@ -2,15 +2,14 @@ import { Box, Stack } from "@mui/material";
 import React from "react";
 import { ChannelCard, VideoCard } from "./";
 
-const Videos = ({ videos }) => {
+const Videos = ({ videos, direction }) => {
   return (
     <Stack
-      direction="column"
-      flexWrap={"wrap"}
-      justifyContent={"start"}
-      alignContent={"start"}
+      direction={direction || "row"}
+      flexWrap="wrap"
+      justifyContent="start"
+      alignContent="start"
       gap={2}
-      sx={{ flexDirection: { md: "row" } }}
     >
       {videos.map((video, idx) => (
         <Box key={idx}>
